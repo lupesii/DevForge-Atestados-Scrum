@@ -6,4 +6,8 @@ app = Flask(__name__)
 def index():
     return render_template("index.html"),200
 
+@app.route("/header")
+def header():
+    return render_template('header.html')
+
 app.run(debug=True, use_reloader=True)
